@@ -44,8 +44,45 @@
             <button> Assignee </button>
             <button> Date </button
         </div>
-        
-        <h2><a href="#">+ New Task</a></h2>
+
+        <!--
+        <div id="welcomeDiv"  class="answer_list" > WELCOME </div>
+        <div id="tbox_div">
+        </div>
+        <input type="button" name="answer" value="Show Div" onclick="showDiv()" />
+        <script>
+            function showDiv(){
+         var newtextbox ='';
+         if (!document.getElementById("textInput")) {
+         newtextbox += '<input type="text" id="textInput" value="..." />'; 
+           document.getElementById('tbox_div').innerHTML+=newtextbox;
+            }
+         }
+        </script>
+        -->
+        <div id="tbox_div">
+
+        </div>
+        <h2>
+            <a href="#" onclick="newTask()">+ New Task</a>
+        </h2>
+       <!-- 
+        <input type="button" name="answer" onclick="newTask()"/>
+       --> 
+
+        <script>
+            function newTask(){
+                var newtextbox = '';
+                var assignee ='';
+                var date ='';
+                newtextbox += '<input type="text" id="textInput" value="Insert Task" />';
+                assignee += '<button onclick="pickAssignee" value= "Assignee">Assignee</button>';
+                date += '<button onclick="pickDate" value= "Pick Date">Date</button>';
+                document.getElementById('tbox_div').innerHTML+=newtextbox;
+                document.getElementById('tbox_div').innerHTML+=assignee;
+                document.getElementById('tbox_div').innerHTML+=date;
+            }
+        </script>
     </div>
 </body>
 </html>
