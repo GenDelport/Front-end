@@ -110,6 +110,9 @@ body {
     color: #fff
 }
 
+/*
+  Create New Project tab 
+*/
 .create-project h1{
     text-align:left;
     margin-left: 20%;
@@ -126,4 +129,30 @@ body {
     margin-left: 20%;
     font-size: 14px;
     width: 50%;
+}
+/**/
+
+/*
+  Supervisor Dashboard tab 
+*/
+.supervisor_dashboard label{
+    display: block;
+    font-size: 20px;
+    margin-left: 20%;
+}
+.supervisor_dashboard input{
+    display: block;
+    font-size: 20px;
+    margin-left: 20%;
+    margin-bottom: 10px;
+    
+}
+.supervisor_dashboard select{
+    margin-left:20%;
+
+}
+
+.supervisor_dashboard h2 {
+    font-size: 14px;
+   
 }
