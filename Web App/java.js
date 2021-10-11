@@ -10,3 +10,9 @@ function newTask(){
     document.getElementById('tbox_div').innerHTML+=assignee;
     document.getElementById('tbox_div').innerHTML+=date;
 }
+
+function searchStudent() {
+    var newtextbox = '';
+    newtextbox += '<input type="text" id ="textInput" value ="Insert Task" />';
+    document.getElementById('select_div').innerHTML += newtextbox;
+}

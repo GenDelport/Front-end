@@ -34,7 +34,7 @@
             <div class="userProfile"> <a href="#"><i class="far fa-user-circle xyz"></i></a>
                 <p class="username">No Name<br><a href="#">View Profile</a></p> 
             </div>
-            <a href="#"><i class="fas fa-cog mnp"></i></a>
+            <a href="#"><i id="settings" class="fas fa-cog mnp"></i></a>
         </div>
     </div>
 
@@ -63,14 +63,17 @@
     <h3>To Do:</h3>
         <div class="input">
             <input type="text">
-            <button> Assignee </button>
+            
+            
+            <button onclick="searchStudent()"> Assignee </button>
+    
             <button> Date </button
         </div>
 
     <div id="tbox_div">
 
     </div>
-    <div class="dashboard">
+    <div class="supervisor_dashboard">
         <h2>
             <a href="#" onclick="newTask()">+ New Task</a>
         </h2>
@@ -80,5 +83,4 @@
 
 </body>
 </html>
-
 

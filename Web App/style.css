@@ -85,7 +85,10 @@ body {
 .mnp {
     padding-top: 60%;
     line-height: 30px;
-    font-size: 25px !important
+    font-size: 25px !important;
+}
+.sidebar #settings{
+    margin-left: 15px;
 }
 
 .notification1 {
@@ -131,7 +134,6 @@ body {
     width: 50%;
 }
 /**/
-
 /*
   Supervisor Dashboard tab 
 */
@@ -154,5 +156,16 @@ body {
 
 .supervisor_dashboard h2 {
     font-size: 14px;
+    margin-left:20%;
+
    
 }
+/**/
+/*
+  Student Dashboard tab 
+*/
+.student_dashboard h1{
+    margin-left: 20%;
+}
+
+/**/
