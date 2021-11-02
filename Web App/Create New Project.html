@@ -38,39 +38,59 @@
         </div>
     </div>
     <div class="create-project">
-        <h1>Create New Project</h1>
-        <h1>To Do:</h1>
-        <div class="input">
-            <input type="text">
-            <button> Assignee </button>
-            <button> Date </button
-        </div>
+        <label for="input">Create New Project :</label>
+        <!-- <input placeholder="Project Name"> -->
 
-        <!--
-        <div id="welcomeDiv"  class="answer_list" > WELCOME </div>
-        <div id="tbox_div">
-        </div>
-        <input type="button" name="answer" value="Show Div" onclick="showDiv()" />
+
+
+        <select id="choice">
+            <option value="" disabled selected>Select</option>
+            <option value="create_report">New Report</option>
+            <option value="create_template">New Template</option>
+            <option value="create_form"> New Form</option>
+        </select>
         <script>
-            function showDiv(){
-         var newtextbox ='';
-         if (!document.getElementById("textInput")) {
-         newtextbox += '<input type="text" id="textInput" value="..." />'; 
-           document.getElementById('tbox_div').innerHTML+=newtextbox;
-            }
-         }
-        </script>
-        -->
-        <div id="tbox_div">
+            function dropDownChange(){
+                var choice = document.getElementById("choice");
+                var options = choice.options[choice.selectedIndex].value;
 
-        </div>
+                if (options == "create_report"){
+                    alert("Report created for student")
+                }
+                else if (options == "create_template"){
+                    alert("Template created for student")
+                }
+                else if (options == "create_form"){
+                    alert("Please add form")
+                }
+                else{
+                    alert("Pick option")
+                }
+            }
+        </script>
+
+        <h1>Student Number:</h1>
+
+        <input type="text">
+
+        <button onclick="dropDownChange()">Create</button>
+
+    </div>
+
+    <!-- <div class="input">
+        <input type="text">
+
+
+        <button onclick="searchStudent()"> Assignee </button>
+
+        <button> Date </button </div> <div id="tbox_div">
+
+    </div>
+    <div class="supervisor_dashboard">
         <h2>
             <a href="#" onclick="newTask()">+ New Task</a>
         </h2>
-       <!-- 
-        <input type="button" name="answer" onclick="newTask()"/>
-       --> 
-    </div>
+    </div> -->
 </body>
 </html>
 

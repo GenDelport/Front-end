@@ -127,16 +127,48 @@ body {
     font-size: 14px;
 }
 
-.input input{
+/* .input input{
     text-align:left;
     margin-left: 20%;
     font-size: 14px;
     width: 50%;
+} */
+
+/* .create-project h1 {
+    font-size: 20px;
+    margin-left: 20%;
+} */
+/* .create-project h2 {
+    font-size: 14px;
+    margin-left:20%; 
+} */
+.create-project label{
+    display: block;
+    font-size: 20px;
+    margin-left: 20%;
+}
+
+.create-project select{
+    margin-left: 20%;
+
+}
+.create-project input{
+    display: block;
+    font-size: 20px;
+    margin-left: 20%;
+    margin-bottom: 10px; 
+}
+.create-project button {
+    margin-left: 20%;
 }
 /**/
 /*
   Supervisor Dashboard tab 
 */
+
+.progress-bar {
+    margin-left: 20%;
+}
 .supervisor_dashboard label{
     display: block;
     font-size: 20px;
@@ -146,8 +178,7 @@ body {
     display: block;
     font-size: 20px;
     margin-left: 20%;
-    margin-bottom: 10px;
-    
+    margin-bottom: 10px; 
 }
 .supervisor_dashboard select{
     margin-left:20%;
@@ -156,9 +187,17 @@ body {
 
 .supervisor_dashboard h2 {
     font-size: 14px;
-    margin-left:20%;
-
-   
+    margin-left:20%; 
+}
+.supervisor_dashboard h1 {
+    font-size: 20px;
+    margin-left: 20%;
+}
+.supervisor_dashboard #info:hover{
+    color:red;
+}
+.supervisor_dashboard #info{
+    margin-left: 20%;
 }
 /**/
 /*
